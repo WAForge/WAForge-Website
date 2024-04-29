@@ -13,6 +13,7 @@ import hackathon from './assets/Pictures/hackathon.png';
 import Button from './assets/Button';
 import Form from './assets/Form';
 import SocialMedias from './assets/SocialMedia';
+import Person from './assets/Pictures/person.jpg';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -69,6 +70,42 @@ function App() {
               </div>
 
             }/>
+            <ImageHorizontalCard title="TEAM" extraStyle = " h-[1500px] w-[90vw] md:h-[700px] md:w-[1200px]" Element1 = {
+              <div>
+                <div className='flex flex-col md:flex-row justify-center items-center'>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                  </div>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                  </div>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                  </div>
+                </div>
+                <div className='flex flex-col md:flex-row justify-center items-center'>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                  </div>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                  </div>
+
+                
+                </div>
+              </div>
+              
+            } />
           </div>}
           
         

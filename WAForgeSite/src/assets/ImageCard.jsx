@@ -6,7 +6,7 @@ const ImageHorizontalCard = (plugin) => {
     if(image === undefined){thing = "100%";} else{thing = "50%";}
     if(image === undefined){var hiddenornot = " hidden";} else{hiddenornot = "block";}
     var imageStyle =" mr-15 md:h-[300px] mb-[5vh] md:mb-0 bottom-0 md:bottom-4" + hiddenornot;
-    if(description === "undefined"){paraStyle = "none";} else{paraStyle = "block";}
+    if(description === "undefined"){paraStyle = " none";} else{paraStyle = " block";}
     var paraStyle;
     var paragraphSytle = "text-white font-Montserrat font-[200] mt-3 textGlow " + extraDescriptionStyles + paraStyle;
     var interiorDivStyle = "flex flex-col justify-center items-center w-full md:w-["+String(thing)+"] ml-0 md:ml-10 mr-0 md:mr-10";
@@ -18,8 +18,9 @@ const ImageHorizontalCard = (plugin) => {
                 <img src={image} className={imageStyle}></img>
                 <div className={interiorDivStyle}>
                     {subTitle}
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >{title}</h1>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" ><span className="textGlow">{title}</span></h1>
                     <p className={paragraphSytle}>{description}</p>
+                    
                     
                 {Element1}
                 {Element2}
