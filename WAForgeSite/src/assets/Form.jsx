@@ -1,0 +1,27 @@
+const Form = () => {
+    return ( 
+        <div className="flex flex-col items-center justify-center h-fit text-white">
+            <div className="max-w-lg p-6 rounded-lg shadow-lg">
+
+                <input
+                type="text"
+                placeholder="Enter your name"
+                className="w-full px-4 py-1 mb-4 bg-[#00000000] border-2 border-[#00dc82] rounded-lg focus:outline-none focus:border-teal-500"
+                />
+                <input
+                type="email"
+                placeholder="Enter your email address"
+                className="w-full px-4 py-1 mb-4 bg-[#00000000] border-2 border-[#00dc82] rounded-lg focus:outline-none focus:border-teal-500"
+                />
+                <button
+                type="button"
+                className="w-full px-4 py-1 border-[#00dc82] border-2 text-[#ffffff] font-Montserrat rounded-lg focus:outline-none transition-all duration-2 hover:text-black hover:bg-[#00dc82]"
+                >
+                Submit
+                </button>
+            </div>
+    </div>
+     );
+}
+ 
+export default Form;
