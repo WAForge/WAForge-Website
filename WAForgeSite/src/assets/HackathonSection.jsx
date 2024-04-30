@@ -29,9 +29,9 @@ const HackathonSection = () => {
                                 <div className="relative p-10 justify-center items-center text-center opacity-100 w-[95vw] md:w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[8vh] p-2vh rounded-[20px] ">
                                     <SecondSubtitle text="Thank you all for a great event this year!" />
                                     <div className="flex flex-col md:flex-row justify-center items-center">
-                                        <Card titleSize = "20px" title="50+ participants" extraStyles = "font-extralight"/>
-                                        <Card titleSize = "20px" title="24 schools" extraStyles = "font-extralight"/>
-                                        <Card titleSize = "20px" title="28 submissions" extraStyles = "font-extralight"/>
+                                        <Card titleSize = "20px" title="50+ participants" extraStyles = "text-[1.2em] textGlow font-extralight"/>
+                                        <Card titleSize = "20px" title="24 schools" extraStyles = "text-[1.2em] textGlow font-extralight"/>
+                                        <Card titleSize = "20px" title="28 submissions" extraStyles = "text-[1.2em] textGlow font-extralight"/>
                                     </div>
                                     <SecondSubtitle text="Congrats to all the winners!"/>
                                     <div className="flex flex-col md:flex-row justify-center items-center">

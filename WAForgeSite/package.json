@@ -2,6 +2,7 @@
   "name": "waforgesite",
   "private": true,
   "version": "0.0.0",
+  "proxy": "https://script.google.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

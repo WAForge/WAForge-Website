@@ -14,6 +14,7 @@ import Button from './assets/Button';
 import Form from './assets/Form';
 import SocialMedias from './assets/SocialMedia';
 import Person from './assets/Pictures/person.jpg';
+import Footer from  './assets/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,29 +22,25 @@ function App() {
   return (
     <>
       <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
-        <Header />
-        <VideoSection videos = {[video1, video2, video3]} isHero = {true}/>
-        <SectionBreak />
-        <ServiceSection id="services" title="SERVICES" 
-          element1={
-            <div className='flex flex-col justify-center items-center'>
-              <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button link = "https://waforge.org" text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
-              <ImageHorizontalCard extraStyle=" h-[650px] w-[90vw] md:h-[450px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form />} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
-              <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://waforge.org" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />
+            <Header />
+            <VideoSection videos = {[video1, video2, video3]} isHero = {true}/>
+            <SectionBreak />
+            <ServiceSection id="services" title="SERVICES" 
+              element1={
+                <div className='flex flex-col justify-center items-center'>
+                  <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button link = "https://waforge.org" text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
+                  <ImageHorizontalCard extraStyle=" h-[650px] w-[90vw] md:h-[450px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form />} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
+                  <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://hcb.hackclub.com/donations/start/waforge" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />
 
-            </div>
-        
-        }
-          
-          />
-        <SectionBreak />
-        <HackathonSection id="hackathons"/>
-        <SectionBreak />
-        <ServiceSection id="services" 
-        
-        title="ABOUT"
-        element1={
-          <div className="flex flex-col justify-center items-center">
+                </div>
+            
+            }
+              
+              />
+            <SectionBreak />
+            <HackathonSection id="hackathons"/>
+            <SectionBreak />
+            <ServiceSection id="services" title="ABOUT" element1={<div className="flex flex-col justify-center items-center">
             <ImageHorizontalCard extraStyle = " h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" title="MISSION" description="WAForge was created to give young developers an opportunity to make meaningful connections, drive innovation, and to learn" extraDescriptionStyles="text-[1.5em] " Element1={
               <div className="mt-10">
 
@@ -105,11 +102,10 @@ function App() {
                 </div>
               </div>
               
-            } />
-          </div>}
-          
-        
-        />
+            } /></div>}/>
+
+            <SectionBreak />
+            <Footer />
       </div> 
     </>
   )
