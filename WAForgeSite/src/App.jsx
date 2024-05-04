@@ -28,7 +28,7 @@ function App() {
           element1={
             <div className='flex flex-col justify-center items-center'>
               <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button link = "https://waforge.org" text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
-              <ImageHorizontalCard extraStyle=" h-[650px] w-[90vw] md:h-[450px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form />} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
+              <ImageHorizontalCard extraStyle=" h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" subTitle={<CardSubtitle />} Element1={<Form paddingx="px-10" paddingy="py-2"/>} title="NEWSLETTER" description="Join our newsletter to stay up to date with the latest news and events in tech and business. Our newsletter also offers exclusive content and updates on upcoming events and activities at WAForge." />
               <ImageHorizontalCard title="COMING SOON" extraStyle = " h-[600px] w-[90vw] md:h-[370px] md:w-[1200px]" description="Follow us on our social media to stay updated on everything WAForge!" Element2={<Button link = "https://waforge.org" text = "Support WAForge" paddingx = {" px-[4rem]"} paddingy = " py-[0.5rem]" extraStyle="mt-[0vh]"/>} Element1={<SocialMedias />} />
 
             </div>
@@ -75,30 +75,31 @@ function App() {
                 <div className='flex flex-col md:flex-row justify-center items-center'>
                   <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                     <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px] " >Siddarth </h1>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow" ></h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Co-Founder</p>
+                  </div>
+                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
+                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Rahul Peesa</h1>
                     <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
                   </div>
                   <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                     <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
-                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
-                  </div>
-                  <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
-                    <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
-                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Evan Gubarev</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Technology Officer</p>
                   </div>
                 </div>
                 <div className='flex flex-col md:flex-row justify-center items-center'>
                   <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                     <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
-                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav Koganti</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Outreach Manager</p>
                   </div>
                   <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                     <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >John Doe</h1>
-                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
+                    <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin Munugeti</h1>
+                    <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Marketing Manager</p>
                   </div>
 
                 

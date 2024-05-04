@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@typeform/embed-react": "^3.17.0"
+  }
+}
