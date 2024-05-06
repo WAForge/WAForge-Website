@@ -35,13 +35,13 @@ const HackathonSection = () => {
                                     </div>
                                     <SecondSubtitle text="Congrats to all the winners!"/>
                                     <div className="flex flex-col md:flex-row justify-center items-center">
-                                        <Card titleSize = "1em" title="The Foodspect App" description="Second Place" descriptionSize = "1em" extraStyles="font-bold"/>
-                                        <Card titleSize = "1em" title="The Monster's Meal" description="First Place" extraStyles="font-bold"/>
-                                        <Card titleSize = "1em" title="Flappy Bird Exercise" description="Third Place" extraStyles="font-bold"/>
+                                    <a href="https://waforge.devpost.com/submissions/485501-foodspect-app"><Card titleSize = "1em" title="The Foodspect App" description="Second Place" descriptionSize = "1em" extraStyles="font-bold"/></a>
+                                        <a href="https://waforge.devpost.com/submissions/485517-the-monster-s-meal"><Card titleSize = "1em" title="The Monster's Meal" description="First Place" extraStyles="font-bold"/></a>
+                                        <a href="https://waforge.devpost.com/submissions/485504-flappy-bird-and-exercise"><Card titleSize = "1em" title="Flappy Bird Exercise" description="Third Place" extraStyles="font-bold"/></a>
                                     </div>
                                     <div className="flex flex-col md:flex-row justify-center items-center">
-                                        <Card titleSize = "1em" title="Fitness Tracker" description="Best UI" descriptionSize = "1em" extraStyles="font-bold"/>
-                                        <Card titleSize = "1em" title="VedRX" description="Best Functionality" extraStyles="font-bold"/>
+                                    <a href="https://waforge.devpost.com/submissions/485459-fitness-tracker-waforge-hackathon"><Card titleSize = "1em" title="Fitness Tracker" description="Best UI" descriptionSize = "1em" extraStyles="font-bold"/></a>
+                                        <a href="https://waforge.devpost.com/submissions/485521-vedrx"><Card titleSize = "1em" title="VedRX" description="Best Functionality" extraStyles="font-bold"/></a>
                                         </div>
                                 </div>
                                 <div className="mt-20 relative p-10 justify-center items-center text-center opacity-100 w-[fit-content] h-[fit-content] bg-[#0c0c0d] top-[8vh] px-10 md:px-0 rounded-[20px] ">
