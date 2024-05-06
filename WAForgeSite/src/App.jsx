@@ -26,11 +26,10 @@ import {
 
 
 function App() {
-  const serviceSection = useRef();
-
   const [count, setCount] = useState(0)
   const ref = useRef(null)
   const doSomething = () => {
+    console.log('scrolling');
     ref.current?.scrollIntoView({behavior: 'smooth'});
   }
   return (
@@ -41,6 +40,7 @@ function App() {
             <SectionBreak />
 
             <ServiceSection id="services" title="SERVICES" 
+               
               element1={
                 <div ref={ref} className='flex flex-col justify-center items-center'>
                   <ImageHorizontalCard subTitle={<CardSubtitle />} extraStyle = " h-[600px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1 = {<Button isOpenDiv={true} text = "Sign Up" paddingx = {" px-[2.5rem]"} paddingy = " py-[0.35rem]" extraStyle="mt-[3vh] font-[500]"/>} image = {hackathon} title="HACKATHON" description="WAForge offers annual hackathons for students to showcase their skills and learn from industry professionals. These hackathons offer grand cash prizes and the opportunity to network with tech enthusiasts." />
@@ -126,4 +126,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
