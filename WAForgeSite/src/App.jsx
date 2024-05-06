@@ -17,6 +17,13 @@ import SocialMedias from './assets/SocialMedia';
 import Person from './assets/Pictures/person.jpg';
 import Footer from  './assets/Footer';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
 
 function App() {
   const serviceSection = useRef();
