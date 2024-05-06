@@ -4,7 +4,7 @@ import SectionBreak from './SectionBreak';
 import logo from './Pictures/BiggerLogo.svg';
 import Button from './Button';
 const VideoSection = (props) => {
-    const { videos, isHero, element } = props;
+    const { videos, isHero } = props;
     const intervalDuration = 3000; // Interval duration in milliseconds
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
     
@@ -42,7 +42,7 @@ const VideoSection = (props) => {
                 <img src={logo} className="relative w-[50px] h-[50px] md:w-[75px] md:h-[75px] pulse bottom-4"></img>
                 <h1 className="z-10 text-white font-Poppins font-[800] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh] textGlow">WAFORGE</h1>
                 <h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[1.5em] mt-3 md:text-[2em] textGlow">Innovate Create Learn</h1>
-                {element}
+                <Button action = "this.scrollToSection" text = "Get Started" paddingx = {" px-[6rem]"} paddingy = " py-[1rem]" extraStyle="mt-[6vh]"/>
               </div>
               )}
             </div>
