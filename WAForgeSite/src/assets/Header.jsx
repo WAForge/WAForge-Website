@@ -11,9 +11,7 @@ const Header = () => {
                     <HeaderLogo />
                 </div>
                 <div className="mr-4">
-                    <HeaderLink link="#" text="Home" />
-                    <HeaderLink text="Home" />
-                    <HeaderLink text="Home" />
+                    
                 </div>
             </div>
             <SectionBreak />

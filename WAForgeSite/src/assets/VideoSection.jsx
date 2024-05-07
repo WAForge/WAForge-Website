@@ -4,22 +4,31 @@ import SectionBreak from './SectionBreak';
 import logo from './Pictures/BiggerLogo.svg';
 import Button from './Button';
 const VideoSection = (props) => {
-    const { videos, isHero, element } = props;
+    const { videos, isHero, element, shouldChange } = props;
     const intervalDuration = 3000; // Interval duration in milliseconds
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
     
     useEffect(() => {
-        // Function to shuffle between videos
-        const shuffleVideos = () => {
-          setCurrentVideoIndex(prevIndex => (prevIndex + 1) % videos.length);
-        };
-      
-        // Set interval to shuffle videos every x seconds
-        const intervalId = setInterval(shuffleVideos, intervalDuration);
-      
-        // Clear interval on component unmount
-        return () => clearInterval(intervalId);
-      }, [videos, currentVideoIndex]); // Add currentVideoIndex here
+    // Function to shuffle between videos
+    const shuffleVideos = () => {
+      setCurrentVideoIndex(prevIndex => (prevIndex + 1) % videos.length);
+    };
+
+    let intervalId;
+
+    // Check if shouldChange is undefined or true
+    if (shouldChange === true) {
+      // Set interval to shuffle videos every x seconds
+      intervalId = setInterval(shuffleVideos, intervalDuration);
+    }
+
+    // Clear interval on component unmount
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [videos, currentVideoIndex, shouldChange]); // Add shouldChange here
       
       return (
     <section className='overflow-hidden relative w-full h-[85vh]'>
