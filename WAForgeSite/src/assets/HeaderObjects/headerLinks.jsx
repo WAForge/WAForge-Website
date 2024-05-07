@@ -1,7 +1,7 @@
 const HeaderLink = (props) => {
-    const {text} = props;
+    const {text, link} = props;
     return ( 
-        <a href="#" className="text-white mx-4 font-Montserrat">{text}</a>
+        <a href={link} className="text-white mx-4 font-Montserrat">{text}</a>
      );
 }
  

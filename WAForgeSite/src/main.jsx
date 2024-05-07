@@ -4,16 +4,21 @@ import App from './App.jsx'
 import './index.css'
 import Cursor from './assets/Cursor'
 import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Navigate,
+    RouterProvider,
+    createBrowserRouter
 } from "react-router-dom";
+import About from './Pages/About.jsx'
  
+const router = createBrowserRouter([
+
+  {path: "/", element: <App />},
+  {path: "/About", element: <About />}
+
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
     <Cursor />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
