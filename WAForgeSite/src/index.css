@@ -22,6 +22,17 @@
         animation: glow 1s ease-in-out infinite alternate;
       }
       
+      .biggerTextGlow {
+        animation: biggerGlow 1s ease-in-out infinite alternate;
+      }
+      @keyframes biggerGlow{
+        0%{
+            text-shadow: 0 0 10px #ffffffd4;
+        }
+        100%{
+            text-shadow: 0 0 30px #ffffffd4;
+        }
+      }
     @keyframes glow{
     0%{
         text-shadow: 0 0 10px #ffffff71;

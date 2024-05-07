@@ -4,7 +4,7 @@ import SectionBreak from './SectionBreak';
 import logo from './Pictures/BiggerLogo.svg';
 import Button from './Button';
 const VideoSection = (props) => {
-    const { videos, isHero, element, shouldChange } = props;
+    const { videos, isHero, element, shouldChange, text } = props;
     const intervalDuration = 3000; // Interval duration in milliseconds
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
     
@@ -53,6 +53,11 @@ const VideoSection = (props) => {
                 <h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[1.5em] mt-3 md:text-[2em] textGlow">Innovate Create Learn</h1>
                 {element}
               </div>
+              )}
+              {!isHero && (
+                <div className='flex flex-col justify-center items-center'>
+                  {element}
+                </div>
               )}
             </div>
         }

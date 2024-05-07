@@ -11,7 +11,9 @@ const Header = () => {
                     <HeaderLogo />
                 </div>
                 <div className="mr-4">
-                    
+                    <HeaderLink link="#" text="About" />
+                    <HeaderLink text="Sponsors" />
+                    <HeaderLink text="FAQ" />
                 </div>
             </div>
             <SectionBreak />

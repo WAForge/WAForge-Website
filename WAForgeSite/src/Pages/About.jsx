@@ -30,9 +30,9 @@ const Home = () => {
         <div className="bg-[#191516] h-[100vh] w-[100vw] overflow-x-hidden">
                     <Header />
                     
-                    <VideoSection videos = {[loopVideo]} isHero = {true} element={<button onClick={() => doSomething()} className='relative inline-flex items-center justify-center p-0.5 mt-10 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-[12.5px] group bg-gradient-to-br from-[#00dc82] via-[#36e4da] to-[#16a79e] group-hover:from-green-400 duration-[0.1s] hover:shadow-[0_0px_15px_0px_rgba(0,255,130,1)] dark:text-white '><span className='font-Montserrat font-light relative transition-all ease-in duration-75 bg-white dark:bg-[#18181b] rounded-[9.5px] px-10 py-2'>About</span></button>}/>
+                    <VideoSection videos = {[loopVideo]} isHero = {false} element={<h1 className="z-10 text-white font-Poppins font-[200] tracking-[0.2em] text-[2em] md:text-[4em] mb-[1vh]">WELCOME TO <span className='biggerTextGlow'>WAFORGE</span></h1>} />
                     <SectionBreak />
-
+                    
                     
                     <Footer />
               </div>
