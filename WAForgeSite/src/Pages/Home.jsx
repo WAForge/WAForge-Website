@@ -53,40 +53,16 @@ const Home = () => {
                     <SectionBreak />
                     <HackathonSection id="hackathons"/>
                     <SectionBreak />
-                    <ServiceSection id="services" title="ABOUT" element1={<div className="flex flex-col justify-center items-center">
-                    <ImageHorizontalCard extraStyle = " h-[600px] w-[90vw] md:h-[450px] md:w-[1200px]" title="MISSION" description="WAForge was created to give young developers an opportunity to make meaningful connections, drive innovation, and to learn" extraDescriptionStyles="text-[1.5em] " Element1={
-                      <div className="mt-10">
-
-                        <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.5em] md:text-[2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >VISION</h1>
-                        <p className="text-white text-[1.5em] font-[200] font-Montserrat">Our goal is to offer a platform for young talent across America to connect and showcase their skills in an engaging environment.</p>
-                              
-                      </div>
-                    }
-                    />
-                    <ImageHorizontalCard title="VALUES" extraStyle = " h-[1000px] w-[90vw] md:h-[350px] md:w-[1200px]" Element1={
-                      <div className='flex flex-col md:flex-row justify-center items-center'>
-                        <div className='w-[90%] md:w-[30%] m-4'>
-                          <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >IMPACT</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">We here at WAForge strive to make an impact in the world and give opportunities to those who are willing to take advantage of it</p>
-                        </div>
-                        <div className='w-[90%] md:w-[30%] m-4'>
-                          <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >IDEAS FIRST</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">We value ideas greatly here at WAForge. We believe everything starts with a great idea, and we try to foster that in our community.</p>
-                        </div>
-                        <div className='w-[90%] md:w-[30%] m-4'>
-                          <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] mb-[0.2vh] md:mb-[1vh] textGlow top-0" >COMMUNITY</h1>
-                          <p className="text-white text-[1em] font-[200] font-Montserrat">WAForge was created to foster a community of tech enthusiasts who are passionate about making a difference in the world.</p>
-                        </div>
-                      </div>
-
-                    }/>
+                    <ServiceSection id="services" title="OUR TEAM" element1={<div className="flex flex-col justify-center items-center">
                     
-                    <ImageHorizontalCard title="TEAM" extraStyle = " h-[1500px] w-[90vw] md:h-[700px] md:w-[1200px]" Element1 = {
+                    
+                    <ImageHorizontalCard title="" extraStyle = " h-[1550px] w-[90vw] md:h-[800px] md:w-[1200px] pb-[4vh] pt-[4vh]" Element1 = {
+                      
                       <div>
-                        <div className='flex flex-col md:flex-row justify-center items-center'>
-                          <div className='w-[90%] md:w-fit m-4 mx-[3.2rem] flex flex-col justify-center items-center'>
+                        <div className='flex flex-col md:flex-row justify-center items-center mt-5'>
+                          <div className='w-[90%] md:w-fit m-4 mx-[6rem] flex flex-col justify-center items-center'>
                             <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Rahul Peesa</h1>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Rahul P.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Founder</p>
                           </div>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
@@ -103,20 +79,22 @@ const Home = () => {
                         <div className='flex flex-col md:flex-row justify-center items-center'>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                             <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav Koganti</h1>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Arnav K.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Outreach Manager</p>
                           </div>
                           <div className='w-[90%] md:w-fit m-4 mx-20 flex flex-col justify-center items-center'>
                             <img src={Person} alt="WAForge Team" className="h-[150px] w-[150px] rounded-[50%] border-[2px] border-[#00ffc8]"/>
-                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin Munugeti</h1>
+                            <h1 className="text-white font-Montserrat font-[500] tracking-[0.2em] text-[1.2em] md:text-[1.2em] textGlow mt-[15px]" >Nitin M.</h1>
                             <p className="text-white text-[1em] font-[200] font-Montserrat mt-[7px]">Marketing Manager</p>
                           </div>
 
                         
                         </div>
+
+                        <Button isOpenDiv={false} link="/About" text = "Learn More" paddingx = {" px-[3rem]"} paddingy = " py-[0.7rem]" extraStyle="mt-[5vh] font-[500]"/>
+
                       </div>
-                      
-                    } /></div>}/> 
+                    } /> </div>}/> 
                     
 
                     <SectionBreak />

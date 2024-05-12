@@ -8,11 +8,13 @@ import {
     createBrowserRouter
 } from "react-router-dom";
 import About from './Pages/About.jsx'
- 
+import Sponsor from './Pages/Sponsor.jsx'
+
 const router = createBrowserRouter([
 
   {path: "/", element: <App />},
-  {path: "/About", element: <About />}
+  {path: "/About", element: <About />},
+  {path: "/Sponsor", element: <Sponsor />}
 
 ]);
 

@@ -11,8 +11,8 @@ const Header = () => {
                     <HeaderLogo />
                 </div>
                 <div className="mr-4">
-                    <HeaderLink link="#" text="About" />
-                    <HeaderLink text="Sponsors" />
+                    <HeaderLink link="/About" text="About" />
+                    <HeaderLink link="/Sponsor" text="Sponsors" />
                     <HeaderLink text="FAQ" />
                 </div>
             </div>
